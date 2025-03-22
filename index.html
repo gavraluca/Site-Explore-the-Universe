@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Universe!</title>
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+
+    <header>
+        <h1 id = "explore_the_universe">Explore the Universe!</h1>
+
+        <nav>
+            <ul id = "navigation">
+                <li><a href = "index.html">Home</a></li>    
+                <li><a href = "explore.html">Explore</a></li>    
+                <li><a href = "gallery.html">Gallery</a></li>    
+                <li><a href = "feedback.html">Feedback</a></li>
+                <li><a href = "about.html">About</a></li>    
+            </ul>
+        </nav>
+</header>
+
+        <main>
+            <article>
+                <h2>
+                    Dumitru Prunariu, the first and only Romanian to travel to space.
+                </h2>
+                    <p>
+                        Dumitru Prunariu is a Romanian cosmonaut, aerospace engineer, and former diplomat, best known as the first and only Romanian to travel to space.
+                        He was born on September 27, 1952, in Brașov, Romania, and developed an early interest in aviation and engineering.
+                    </p>
+                    <p>
+                        Prunariu was part of the Intercosmos program, a Soviet initiative that allowed astronauts from allied countries to participate in space missions.
+                        During his time in space, he conducted scientific experiments related to Earth observation, microgravity, and space technology.
+
+                        He remains an influential figure in the field of space policy and has held leadership positions, 
+                        including serving as the President of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS).
+                    </p>
+                    <img src= "earth.png" alt = "earth" class="article_image">
+            </article>
+            
+            <aside>
+                <h3>What's your favorite planet?</h3>
+                <form id="planet_form" method="post" onsubmit="save_favplanet(event)">
+                    <label for="planet">Choose your favourite planet:</label>
+                    <select name="planet" id="planet">
+                        <option value="" disabled selected>Select a planet</option>
+                        <option value="Mercury">Mercury</option>
+                        <option value="Venus">Venus</option>
+                        <option value="Earth">Earth</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Jupiter">Jupiter</option>
+                        <option value="Saturn">Saturn</option>
+                        <option value="Uranus">Uranus</option>
+                        <option value="Neptune">Neptune</option>
+                    </select>
+                    <button type="submit" class="button">Submit</button>
+             
+                </form>
+               
+                <div id="confirmation" style="display:none; color: green;">Your favourite planet has been chosen!</div>
+                <ul id="responsesList"></ul>
+                
+                
+               <h3>How excited are you to explore the Universe?</h3>
+
+               <div class = "slider_container">
+                    <label for="interest_slider">Express your excitement.</label>
+                    <input type = "range" id = "interest_slider" name = "interest_slider" min = "0" max = "100" value = "50">
+                    <span id= "interest_value">50%</span>
+                </div>
+
+
+                <form class = "take_part_mission">
+                <h3>Would you take part in a mission?</h3>
+                <input class = "mission_check" type = "checkbox" id="lucy" name="mission" value="Lucy, 2025 April 20" >
+                <label>Lucy, 2025 April 20</label>
+                <input class = "mission_check" type = "checkbox" id="griffin" name="mission" value="Griffin Mission 1, 2025 Fall">
+                <label>Griffin Mission 1, 2025 Fall</label>
+                <input class = "mission_check" type = "checkbox" id="lunar" name="mission" value="Lunar Pathfinder, 2025">
+                <label>Lunar Pathfinder, 2025</label>
+                <input class = "mission_check" type = "checkbox" id="escapade" name="mission" value="EscaPADE, 2025">
+                <label>EscaPADE, 2025</label>
+
+                <p id="selected_mission">No mission selected</p>
+                
+                </form>
+                
+                <a href="feedback.html"><button type = >Go to Feedback</button></a>
+            </aside>
+
+
+        </main>
+
+        
+        
+        <section class = "discover">
+            <h3>Supermassive Black Holes</h3>
+            <p>A supermassive black hole is a cosmic object with a mass millions or even billions of times greater than our Sun.
+            These incredibly dense structures swallow anything that comes too close, including light, which makes them invisible.
+            The exact origin of supermassive black holes is still a mystery, but astronomers believe they form through:
+
+            Collapse of a massive star – In the hearts of galaxies, massive stars can explode as supernovae, then collapse into black holes.
+            Merging of smaller black holes – Over time, multiple black holes can collide and fuse into one giant black hole.
+            Gradual accumulation of matter – As more matter falls into a black hole, it grows bigger and more powerful.
+            <img src = "blackhole.png" alt = "Supermassive blackhole" class = "article_image">
+            </p>
+        </section>
+
+
+        
+        <footer>
+            <p>&copy; 2025 Explore the universe!   , by Gavra Luca - Mihai - All rights reserved</p>
+        </footer>
+
+
+        <script src = "script.js"></script>
+
+    
+</body>
+</html>
